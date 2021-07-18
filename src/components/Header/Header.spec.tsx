@@ -25,6 +25,8 @@ describe('Header component', () => {
       <Header />
     );
   
+    // screen.logTestingPlaygroundURL();
+
     /**
      * Para verificar se um elemento está em tela eu posso usar tanto o screen (mais fácil) 
      * importado de @testing-library, como o o getByText retornado de render.

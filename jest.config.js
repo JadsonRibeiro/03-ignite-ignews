@@ -20,5 +20,15 @@ module.exports = {
   },
 
   // Seta o tipo do ambiente para os testes
-  testEnvironment: "jsdom"
+  testEnvironment: "jsdom",
+
+  // Configuracoes para verificar cobertura dos testes
+  // Ao executar testes usar, yarn jest --coverage
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "src/**/*.tsx",
+    "!src/**/_app.tsx",
+    "!src/**/_document.tsx",
+  ],
+  coverageReporters: ["lcov", "json"]
 };
